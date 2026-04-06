@@ -1654,6 +1654,33 @@ section {
 }
 
 /* ========================================
+   MINIMAL FOOTER - Clean & Professional
+   ======================================== */
+
+.footer-minimal {
+    border-top: 1px solid var(--border-color-light);
+    padding: 2rem var(--spacing-lg);
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.footer-minimal p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 0;
+    transition: color var(--transition-normal);
+}
+
+.footer-minimal p:hover {
+    color: var(--text-primary);
+}
+
+/* ========================================
    RESPONSIVE DESIGN
    ======================================== */
 
@@ -1827,6 +1854,14 @@ section {
         font-size: 1rem;
     }
 
+    .footer-minimal {
+        padding: 1.5rem var(--spacing-md);
+    }
+
+    .footer-minimal p {
+        font-size: 0.9rem;
+    }
+
     .social-links {
         gap: 1rem;
     }
@@ -1929,6 +1964,15 @@ section {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .footer-minimal {
+        padding: 1.5rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .footer-minimal p {
+        font-size: 0.85rem;
     }
 
     .info-item {
