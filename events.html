@@ -15,10 +15,12 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <img src="festlogo.png" alt="FEST 2026 Logo Dark" class="logo-img logo-dark">
-                <img src="logo2.png" alt="FEST 2026 Logo Light" class="logo-img logo-light">
-            </div>
+            <a href="index.html" class="nav-logo-link" aria-label="Go to home page">
+                <div class="nav-logo">
+                    <img src="festlogo.png" alt="FEST 2026 Logo Dark" class="logo-img logo-dark">
+                    <img src="logo2.png" alt="FEST 2026 Logo Light" class="logo-img logo-light">
+                </div>
+            </a>
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
@@ -26,6 +28,9 @@
                 <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+                🌙
+            </button>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -247,13 +252,6 @@
     <footer class="footer-minimal">
         <p>Designed & Developed by Tahsin Hasan Shan</p>
     </footer>
-
-    <!-- Theme Switcher -->
-    <div class="theme-switcher">
-        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
-            🌙
-        </button>
-    </div>
 
     <script src="script.js"></script>
 </body>
